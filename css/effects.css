@@ -1,0 +1,64 @@
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body { font-family: Pretendard, "Noto Sans KR", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+[data-nav-page][aria-current="page"] {
+  color: #b8ff6a;
+  border-color: rgba(184, 255, 106, 0.22);
+  background: rgba(184, 255, 106, 0.06);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1);
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.reveal[data-delay="1"] { transition-delay: 90ms; }
+.reveal[data-delay="2"] { transition-delay: 180ms; }
+.reveal[data-delay="3"] { transition-delay: 270ms; }
+.reveal[data-delay="4"] { transition-delay: 360ms; }
+
+.photo-frame.is-fallback img,
+.ott-logo-box.is-fallback img { display: none; }
+.photo-frame .photo-fallback,
+.ott-logo-box .ott-fallback { display: none; }
+.photo-frame.is-fallback .photo-fallback { display: grid; }
+.ott-logo-box.is-fallback .ott-fallback { display: block; }
+
+[data-progress-page][data-visited="true"] {
+  border-color: rgba(184, 255, 106, .32);
+  background-image: linear-gradient(145deg, rgba(184,255,106,.08), transparent 50%);
+}
+[data-progress-page][data-visited="true"] [data-visit-state] {
+  color: #b8ff6a;
+  border-color: rgba(184,255,106,.28);
+  background: rgba(184,255,106,.07);
+}
+[data-tour-badge][data-complete="true"] {
+  color: #08111f;
+  border-color: #b8ff6a;
+  background: #b8ff6a;
+  box-shadow: 0 18px 45px rgba(184,255,106,.15);
+}
+
+.animate-float { animation: float 4s ease-in-out infinite; }
+.animate-float-delayed { animation: float 4s ease-in-out 1s infinite; }
+.animate-map-pulse { transform-box: fill-box; transform-origin: center; animation: mapPulse 2.2s ease-in-out infinite; }
+.sound-bar { transform-origin: bottom; animation: soundWave 1.15s ease-in-out infinite alternate; }
+.sound-bar:nth-child(2) { animation-delay: -.7s; }
+.sound-bar:nth-child(3) { animation-delay: -.32s; }
+.sound-bar:nth-child(4) { animation-delay: -.9s; }
+.sound-bar:nth-child(5) { animation-delay: -.45s; }
+.sound-bar:nth-child(6) { animation-delay: -.15s; }
+.sound-bar:nth-child(7) { animation-delay: -.62s; }
+
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+@keyframes mapPulse { 0%,100% { transform: scale(.72); opacity:.55; } 50% { transform: scale(1.22); opacity:.08; } }
+@keyframes soundWave { from { transform:scaleY(.42); opacity:.55; } to { transform:scaleY(1); opacity:1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+  .reveal { opacity:1; transform:none; }
+}

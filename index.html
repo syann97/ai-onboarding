@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/effects.css" />
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+  <meta name="description" content="꾸준함을 성장으로 연결하는 개발자 안세영의 자기소개 홈페이지" />
+  <title>HOME | MY 1-YEAR QUEST</title>
+</head>
+<body class="min-w-[320px] overflow-x-hidden bg-[#0b1020] text-[#f7f9fc] antialiased selection:bg-[#b8ff6a] selection:text-[#08111f]" style="background-image:radial-gradient(circle at 20% 15%,rgba(108,140,255,.17),transparent 34%),radial-gradient(circle at 80% 80%,rgba(184,255,106,.08),transparent 32%)" data-page="home">
+
+  <a href="#main-content" class="fixed -top-24 left-5 z-[100] rounded-xl bg-[#b8ff6a] px-4 py-2.5 font-extrabold text-[#08111f] transition-all focus:top-4">본문으로 이동</a>
+
+  <!-- 모든 페이지에서 그대로 재사용하는 공통 네비게이션 -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-[#0b1020]/80 backdrop-blur-xl" aria-label="사이트 상단">
+    <div class="mx-auto flex min-h-[72px] w-[min(1180px,calc(100%-32px))] items-center gap-4">
+      <a class="inline-flex shrink-0 items-center gap-3 font-black tracking-[-0.03em]" href="index.html" aria-label="홈으로 이동">
+        <span class="grid size-9 place-items-center rounded-xl bg-gradient-to-br from-[#b8ff6a] to-[#e2ffc1] font-mono text-xs font-black text-[#07101f] shadow-[0_10px_28px_rgba(184,255,106,.24)]">MQ</span>
+        <span class="hidden text-sm sm:inline">MY 1-YEAR QUEST</span>
+      </a>
+
+      <button id="menuToggle" type="button" class="ml-auto grid size-11 place-items-center rounded-xl border border-white/10 bg-white/[.04] text-xl lg:hidden" aria-expanded="false" aria-controls="mainNav" aria-label="메뉴 열기">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="mainNav" class="absolute left-4 right-4 top-[calc(100%+8px)] hidden flex-col gap-1 rounded-2xl border border-white/10 bg-[#11182d]/95 p-3 shadow-2xl backdrop-blur-xl lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none" aria-label="주요 메뉴">
+        <a data-nav-page="home" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="index.html">HOME</a>
+        <a data-nav-page="about" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="about.html">ABOUT</a>
+        <a data-nav-page="rhythms" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="rhythms.html">RHYTHMS</a>
+        <a data-nav-page="goals" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="goals.html">GOALS</a>
+      </nav>
+
+      <div class="hidden shrink-0 items-center gap-2 font-mono text-[10px] text-[#9ba7bd] xl:flex" aria-label="사이트 탐색 진행률">
+        <span>TOUR</span>
+        <span class="h-1.5 w-20 overflow-hidden rounded-full bg-white/10"><i class="block h-full w-0 rounded-full bg-[#b8ff6a] transition-[width] duration-500" data-tour-progress-bar></i></span>
+        <strong class="text-[#f7f9fc]" data-tour-progress-text>0/4</strong>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="relative isolate grid min-h-[calc(100svh-72px)] items-center overflow-hidden py-16 lg:py-20">
+      <div class="pointer-events-none absolute left-[6%] top-[10%] -z-10 size-64 rounded-full bg-[#6c8cff]/10 blur-sm"></div>
+      <div class="mx-auto grid w-[min(1180px,calc(100%-32px))] items-center gap-12 lg:grid-cols-[1.12fr_.88fr] lg:gap-20">
+        <div>
+          <div class="reveal mb-5 inline-flex items-center gap-2 rounded-full border border-[#b8ff6a]/25 bg-[#b8ff6a]/5 px-3 py-2 font-mono text-xs font-extrabold tracking-[.08em] text-[#b8ff6a]"><span aria-hidden="true">●</span> PLAYER INTRODUCTION</div>
+          <h1 class="reveal text-[clamp(3.25rem,8.5vw,7rem)] font-black leading-[.93] tracking-[-.075em]" data-delay="1">HELLO,<br />I AM <span class="text-[#b8ff6a]">안세영</span><small class="mt-5 block text-[clamp(1.1rem,2vw,1.7rem)] font-semibold leading-relaxed tracking-[-.02em] text-[#9ba7bd]">매일의 꾸준함을 성장으로 연결하는 개발자 안세영입니다.</small></h1>
+          <div class="reveal mt-7 flex flex-wrap gap-2.5" data-delay="2" aria-label="핵심 키워드"><span class="rounded-full border border-white/10 bg-white/[.035] px-3 py-2 font-mono text-xs font-bold text-[#9ba7bd]">RUN.</span><span class="rounded-full border border-white/10 bg-white/[.035] px-3 py-2 font-mono text-xs font-bold text-[#9ba7bd]">LEARN.</span><span class="rounded-full border border-white/10 bg-white/[.035] px-3 py-2 font-mono text-xs font-bold text-[#9ba7bd]">GROW.</span></div>
+          <div class="reveal mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center" data-delay="3"><a class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-[#b8ff6a] to-[#d8ffac] px-5 font-black text-[#08111f] shadow-[0_18px_38px_rgba(184,255,106,.15)] transition hover:-translate-y-0.5 hover:shadow-[0_22px_48px_rgba(184,255,106,.25)]" href="about.html">START MY QUEST <span aria-hidden="true">→</span></a><span class="font-mono text-xs text-[#9ba7bd]">4-PAGE MULTI PAGE JOURNEY</span></div>
+        </div>
+
+        <div class="reveal relative grid min-h-[520px] place-items-center" data-delay="2">
+          <div class="w-full max-w-[430px] rotate-0 rounded-[34px] border border-white/10 bg-gradient-to-br from-white/10 to-white/[.02] p-2.5 shadow-[0_24px_80px_rgba(0,0,0,.35)] lg:rotate-[2.5deg]">
+            <figure class="photo-frame relative aspect-[4/5] overflow-hidden rounded-[25px] bg-[#151c33]" id="profilePhotoFrame">
+              <img class="size-full object-cover" src="images/profile.jpg" alt="안세영의 여행 사진" data-fallback-target="profilePhotoFrame" />
+              <div class="photo-fallback absolute inset-0 place-items-center p-8 text-center" aria-hidden="true"><div><div class="mx-auto mb-4 grid size-20 place-items-center rounded-3xl border border-dashed border-white/30 text-3xl text-[#b8ff6a]">＋</div><strong class="block text-lg">여행 사진을 추가해 주세요</strong><p class="mt-2 text-xs text-[#9ba7bd]">images/profile.jpg 경로에<br />사진을 넣으면 자동 표시됩니다.</p></div></div>
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#050914]/90 via-transparent to-transparent"></div>
+              <figcaption class="absolute inset-x-5 bottom-5 z-10 flex items-end justify-between gap-4"><div><strong class="block text-lg">안세영</strong><span class="text-xs text-white/70">Developer in progress</span></div><span class="rounded-full bg-[#b8ff6a] px-2.5 py-1.5 font-mono text-[10px] font-black text-[#07101f]">LV. 01</span></figcaption>
+            </figure>
+          </div>
+          <div class="animate-float absolute bottom-10 left-0 hidden rounded-2xl border border-white/10 bg-[#0b1020]/85 px-4 py-3 font-mono text-xs text-[#9cafef] shadow-xl backdrop-blur lg:block">const mindset = "꾸준함";</div>
+          <div class="animate-float-delayed absolute right-0 top-16 hidden rounded-2xl border border-[#b8ff6a]/20 bg-[#0b1020]/85 px-4 py-3 font-mono text-xs font-extrabold text-[#b8ff6a] shadow-xl backdrop-blur lg:block">+1 GROWTH / DAY</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-t border-white/5 bg-[#0d1427]/50 py-20" aria-labelledby="overview-title">
+      <div class="mx-auto w-[min(1180px,calc(100%-32px))]">
+        <p class="reveal mb-4 inline-flex items-center gap-2.5 font-mono text-xs font-extrabold uppercase tracking-[.16em] text-[#b8ff6a]"><span class="h-px w-7 bg-current"></span>Explore My Pages</p>
+        <h2 class="reveal max-w-4xl text-[clamp(2.4rem,6vw,4.75rem)] font-black leading-[1.08] tracking-[-.055em]" id="overview-title" data-delay="1">CHOOSE THE <span class="text-[#9cafef]">NEXT QUEST</span></h2>
+        <p class="reveal mt-5 max-w-3xl text-[clamp(.95rem,1.7vw,1.2rem)] text-[#9ba7bd]" data-delay="2">각 카드를 선택하면 별도의 HTML 페이지로 이동합니다. 모든 페이지를 방문하면 탐색 퀘스트가 완료됩니다.</p>
+
+        <div class="mt-10 grid gap-4 lg:grid-cols-3">
+          <a class="reveal group min-h-64 rounded-[28px] border border-white/10 bg-[#151c33]/80 p-6 shadow-[0_18px_50px_rgba(0,0,0,.2)] transition hover:-translate-y-1.5 hover:border-[#6c8cff]/35" href="about.html" data-progress-page="about" data-delay="2"><div class="flex items-center justify-between"><span class="grid size-12 place-items-center rounded-2xl border border-white/10 bg-white/[.04] text-xl text-[#b8ff6a]">⌖</span><span class="rounded-full border border-white/10 px-2.5 py-1.5 font-mono text-[9px] font-black text-[#9ba7bd]" data-visit-state>NOT VISITED</span></div><h3 class="mt-7 text-xl font-black tracking-[-.03em]">ABOUT &amp; MY BASE</h3><p class="mt-3 text-sm text-[#9ba7bd]">기본 정보와 충남대학교 오른쪽 궁동 로데오 생활권을 소개합니다.</p><span class="mt-8 inline-block text-xs font-black text-[#9cafef]">OPEN ABOUT →</span></a>
+          <a class="reveal group min-h-64 rounded-[28px] border border-white/10 bg-[#151c33]/80 p-6 shadow-[0_18px_50px_rgba(0,0,0,.2)] transition hover:-translate-y-1.5 hover:border-[#6c8cff]/35" href="rhythms.html" data-progress-page="rhythms" data-delay="3"><div class="flex items-center justify-between"><span class="grid size-12 place-items-center rounded-2xl border border-white/10 bg-white/[.04] text-xl text-[#b8ff6a]">♪</span><span class="rounded-full border border-white/10 px-2.5 py-1.5 font-mono text-[9px] font-black text-[#9ba7bd]" data-visit-state>NOT VISITED</span></div><h3 class="mt-7 text-xl font-black tracking-[-.03em]">MY THREE RHYTHMS</h3><p class="mt-3 text-sm text-[#9ba7bd]">운동, OTT 보기, 혼코노로 만드는 일상의 세 가지 리듬입니다.</p><span class="mt-8 inline-block text-xs font-black text-[#9cafef]">OPEN RHYTHMS →</span></a>
+          <a class="reveal group min-h-64 rounded-[28px] border border-white/10 bg-[#151c33]/80 p-6 shadow-[0_18px_50px_rgba(0,0,0,.2)] transition hover:-translate-y-1.5 hover:border-[#6c8cff]/35" href="goals.html" data-progress-page="goals" data-delay="4"><div class="flex items-center justify-between"><span class="grid size-12 place-items-center rounded-2xl border border-white/10 bg-white/[.04] text-xl font-black text-[#b8ff6a]">B</span><span class="rounded-full border border-white/10 px-2.5 py-1.5 font-mono text-[9px] font-black text-[#9ba7bd]" data-visit-state>NOT VISITED</span></div><h3 class="mt-7 text-xl font-black tracking-[-.03em]">SSAFY QUEST BOARD</h3><p class="mt-3 text-sm text-[#9ba7bd]">삼성 B형, 자격증, 스터디라는 세 가지 목표를 보여줍니다.</p><span class="mt-8 inline-block text-xs font-black text-[#9cafef]">OPEN GOALS →</span></a>
+        </div>
+        <div class="reveal mt-8 rounded-2xl border border-white/10 bg-white/[.03] px-5 py-4 text-center font-mono text-xs font-black text-[#9ba7bd] transition" data-delay="4" data-tour-badge>SITE QUEST · 0/4 PAGE COMPLETE</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 bg-[#080d1a]">
+    <div class="mx-auto flex w-[min(1180px,calc(100%-32px))] flex-col gap-2 py-7 text-[10px] text-[#6f7b91] sm:flex-row sm:items-center sm:justify-between">
+      <span>MY 1-YEAR QUEST · 안세영</span>
+      <span>BUILT WITH HTML · TAILWIND CSS · VANILLA JAVASCRIPT · <span data-current-year></span></span>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

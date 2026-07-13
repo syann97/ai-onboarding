@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/effects.css" />
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+  <meta name="description" content="안세영이 SSAFY에서 이루고 싶은 목표를 소개하는 페이지" />
+  <title>GOALS | MY 1-YEAR QUEST</title>
+</head>
+<body class="min-w-[320px] overflow-x-hidden bg-[#0b1020] text-[#f7f9fc] antialiased selection:bg-[#b8ff6a] selection:text-[#08111f]" style="background-image:radial-gradient(circle at 20% 15%,rgba(108,140,255,.17),transparent 34%),radial-gradient(circle at 80% 80%,rgba(184,255,106,.08),transparent 32%)" data-page="goals">
+
+  <a href="#main-content" class="fixed -top-24 left-5 z-[100] rounded-xl bg-[#b8ff6a] px-4 py-2.5 font-extrabold text-[#08111f] transition-all focus:top-4">본문으로 이동</a>
+
+  <!-- 모든 페이지에서 그대로 재사용하는 공통 네비게이션 -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-[#0b1020]/80 backdrop-blur-xl" aria-label="사이트 상단">
+    <div class="mx-auto flex min-h-[72px] w-[min(1180px,calc(100%-32px))] items-center gap-4">
+      <a class="inline-flex shrink-0 items-center gap-3 font-black tracking-[-0.03em]" href="index.html" aria-label="홈으로 이동">
+        <span class="grid size-9 place-items-center rounded-xl bg-gradient-to-br from-[#b8ff6a] to-[#e2ffc1] font-mono text-xs font-black text-[#07101f] shadow-[0_10px_28px_rgba(184,255,106,.24)]">MQ</span>
+        <span class="hidden text-sm sm:inline">MY 1-YEAR QUEST</span>
+      </a>
+
+      <button id="menuToggle" type="button" class="ml-auto grid size-11 place-items-center rounded-xl border border-white/10 bg-white/[.04] text-xl lg:hidden" aria-expanded="false" aria-controls="mainNav" aria-label="메뉴 열기">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="mainNav" class="absolute left-4 right-4 top-[calc(100%+8px)] hidden flex-col gap-1 rounded-2xl border border-white/10 bg-[#11182d]/95 p-3 shadow-2xl backdrop-blur-xl lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none" aria-label="주요 메뉴">
+        <a data-nav-page="home" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="index.html">HOME</a>
+        <a data-nav-page="about" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="about.html">ABOUT</a>
+        <a data-nav-page="rhythms" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="rhythms.html">RHYTHMS</a>
+        <a data-nav-page="goals" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="goals.html">GOALS</a>
+      </nav>
+
+      <div class="hidden shrink-0 items-center gap-2 font-mono text-[10px] text-[#9ba7bd] xl:flex" aria-label="사이트 탐색 진행률">
+        <span>TOUR</span>
+        <span class="h-1.5 w-20 overflow-hidden rounded-full bg-white/10"><i class="block h-full w-0 rounded-full bg-[#b8ff6a] transition-[width] duration-500" data-tour-progress-bar></i></span>
+        <strong class="text-[#f7f9fc]" data-tour-progress-text>0/4</strong>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="min-h-[calc(100svh-72px)]">
+    <section class="py-16 lg:py-20">
+      <div class="mx-auto w-[min(1180px,calc(100%-32px))]">
+        <p class="reveal mb-4 inline-flex items-center gap-2.5 font-mono text-xs font-extrabold uppercase tracking-[.16em] text-[#b8ff6a]"><span class="h-px w-7 bg-current"></span>04 · Goal Board</p>
+        <h1 class="reveal max-w-4xl text-[clamp(2.4rem,6vw,4.75rem)] font-black leading-[1.08] tracking-[-.055em]" data-delay="1">SSAFY <span class="text-[#b8ff6a]">QUEST BOARD</span></h1>
+        <p class="reveal mt-5 max-w-3xl text-[clamp(.95rem,1.7vw,1.2rem)] text-[#9ba7bd]" data-delay="2">SSAFY에서 이루고 싶은 세 가지 목표를 간단한 퀘스트 카드로 정리했습니다.</p>
+
+        <div class="mt-11 grid gap-5 lg:grid-cols-3">
+          <article class="reveal flex min-h-[330px] flex-col rounded-[28px] border border-white/10 bg-[#151c33]/80 p-6 shadow-[0_18px_50px_rgba(0,0,0,.2)] transition hover:-translate-y-1.5 hover:border-[#b8ff6a]/25" data-delay="2"><div class="flex items-center justify-between gap-3"><span class="font-mono text-[10px] font-black tracking-[.08em] text-[#9ba7bd]">QUEST 01 · MAIN</span><span class="rounded-full border border-[#b8ff6a]/20 bg-[#b8ff6a]/5 px-2.5 py-1.5 font-mono text-[9px] font-black tracking-[.06em] text-[#b8ff6a]">TOP PRIORITY</span></div><div class="mt-7 grid size-14 place-items-center rounded-2xl border border-white/10 bg-[#b8ff6a]/5 text-2xl font-black text-[#b8ff6a]">B</div><h2 class="mt-5 text-xl font-black leading-snug">삼성 SW 역량테스트<br/>B형 취득</h2><!-- TODO: 발표 내용이 확정되면 아래 문구만 교체 --><p class="mt-3 text-sm text-[#9ba7bd]">알고리즘 문제 해결 역량을 높이고, 가능한 한 빠르게 B형 취득에 도전하기</p><div class="mt-auto flex items-center justify-between gap-3 border-t border-white/[.07] pt-5 font-mono text-[10px] text-[#9ba7bd]"><span>FOCUS</span><b class="text-white">ALGORITHM</b></div></article>
+          <article class="reveal flex min-h-[330px] flex-col rounded-[28px] border border-white/10 bg-[#151c33]/80 p-6 shadow-[0_18px_50px_rgba(0,0,0,.2)] transition hover:-translate-y-1.5 hover:border-[#b8ff6a]/25" data-delay="3"><div class="flex items-center justify-between gap-3"><span class="font-mono text-[10px] font-black tracking-[.08em] text-[#9ba7bd]">QUEST 02 · SKILL</span><span class="rounded-full border border-[#b8ff6a]/20 bg-[#b8ff6a]/5 px-2.5 py-1.5 font-mono text-[9px] font-black tracking-[.06em] text-[#b8ff6a]">PLANNED</span></div><div class="mt-7 grid size-14 place-items-center rounded-2xl border border-white/10 bg-[#b8ff6a]/5 text-2xl font-black text-[#b8ff6a]">＋</div><h2 class="mt-5 text-xl font-black leading-snug">자격증 취득</h2><!-- TODO: 취득할 자격증이 확정되면 아래 문구만 교체 --><p class="mt-3 text-sm text-[#9ba7bd]">OPIc, ADsP, 빅데이터분석기사 등 다양한 자격증에 도전하기</p><div class="mt-auto flex items-center justify-between gap-3 border-t border-white/[.07] pt-5 font-mono text-[10px] text-[#9ba7bd]"><span>ITEMS</span><b class="text-white">OPIc · ADsP · 빅분기</b></div></article>
+          <article class="reveal flex min-h-[330px] flex-col rounded-[28px] border border-white/10 bg-[#151c33]/80 p-6 shadow-[0_18px_50px_rgba(0,0,0,.2)] transition hover:-translate-y-1.5 hover:border-[#b8ff6a]/25" data-delay="4"><div class="flex items-center justify-between gap-3"><span class="font-mono text-[10px] font-black tracking-[.08em] text-[#9ba7bd]">QUEST 03 · PARTY</span><span class="rounded-full border border-[#b8ff6a]/20 bg-[#b8ff6a]/5 px-2.5 py-1.5 font-mono text-[9px] font-black tracking-[.06em] text-[#b8ff6a]">PARTY OPEN</span></div><div class="mt-7 grid size-14 place-items-center rounded-2xl border border-white/10 bg-[#b8ff6a]/5 text-2xl font-black text-[#b8ff6a]">∞</div><h2 class="mt-5 text-xl font-black leading-snug">스터디 참여</h2><!-- TODO: 스터디 방향이 확정되면 아래 문구만 교체 --><p class="mt-3 text-sm text-[#9ba7bd]">알고리즘, CS, 면접 스터디 등 다양한 학습 활동에 참여하기</p><div class="mt-auto flex items-center justify-between gap-3 border-t border-white/[.07] pt-5 font-mono text-[10px] text-[#9ba7bd]"><span>MESSAGE</span><b class="text-white">STUDY WELCOME</b></div></article>
+        </div>
+
+        <section class="reveal mx-auto mt-24 max-w-4xl text-center" data-delay="2" aria-labelledby="closing-title"><div class="mx-auto mb-6 grid size-20 place-items-center rounded-[28px] border border-[#b8ff6a]/25 bg-[#b8ff6a]/5 text-3xl text-[#b8ff6a] shadow-[0_18px_50px_rgba(184,255,106,.1)]" aria-hidden="true">↑</div><p class="mb-4 font-mono text-xs font-extrabold uppercase tracking-[.16em] text-[#b8ff6a]">Final Message</p><h2 id="closing-title" class="text-[clamp(3rem,8vw,6.5rem)] font-black leading-[.98] tracking-[-.07em]">LET’S GROW<br/><span class="text-[#b8ff6a]">TOGETHER</span></h2><p class="mx-auto mt-8 max-w-3xl text-[clamp(1.05rem,2.2vw,1.5rem)] leading-relaxed">앞으로 1년 동안 함께 꾸준히 공부하고,<br/>힘든 순간에도 포기하지 않으며 서로의 성장을 응원해요.</p><p class="mt-4 text-sm text-[#9ba7bd]">혼자 빠르게 가기보다, 함께 꾸준히 멀리 가고 싶습니다.</p><a class="mt-8 inline-flex min-h-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#b8ff6a] to-[#d8ffac] px-5 font-black text-[#08111f] transition hover:-translate-y-0.5" href="index.html">HOME으로 돌아가기</a></section>
+
+        <nav class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-7 sm:flex-row sm:items-center sm:justify-between" aria-label="페이지 이동">
+          <a class="inline-flex min-h-12 items-center justify-center rounded-xl border border-white/10 bg-white/[.03] px-5 font-bold text-[#9ba7bd] transition hover:-translate-y-0.5 hover:border-white/20 hover:text-white" href="rhythms.html">← RHYTHMS</a>
+          <a class="inline-flex min-h-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#b8ff6a] to-[#d8ffac] px-5 font-black text-[#08111f] shadow-[0_18px_38px_rgba(184,255,106,.14)] transition hover:-translate-y-0.5 hover:shadow-[0_22px_48px_rgba(184,255,106,.23)]" href="index.html">HOME →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 bg-[#080d1a]">
+    <div class="mx-auto flex w-[min(1180px,calc(100%-32px))] flex-col gap-2 py-7 text-[10px] text-[#6f7b91] sm:flex-row sm:items-center sm:justify-between">
+      <span>MY 1-YEAR QUEST · 안세영</span>
+      <span>BUILT WITH HTML · TAILWIND CSS · VANILLA JAVASCRIPT · <span data-current-year></span></span>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

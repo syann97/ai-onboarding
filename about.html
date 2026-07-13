@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/effects.css" />
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+  <meta name="description" content="안세영의 기본 정보와 대전 유성구 궁동 생활권을 소개하는 페이지" />
+  <title>ABOUT | MY 1-YEAR QUEST</title>
+</head>
+<body class="min-w-[320px] overflow-x-hidden bg-[#0b1020] text-[#f7f9fc] antialiased selection:bg-[#b8ff6a] selection:text-[#08111f]" style="background-image:radial-gradient(circle at 20% 15%,rgba(108,140,255,.17),transparent 34%),radial-gradient(circle at 80% 80%,rgba(184,255,106,.08),transparent 32%)" data-page="about">
+
+  <a href="#main-content" class="fixed -top-24 left-5 z-[100] rounded-xl bg-[#b8ff6a] px-4 py-2.5 font-extrabold text-[#08111f] transition-all focus:top-4">본문으로 이동</a>
+
+  <!-- 모든 페이지에서 그대로 재사용하는 공통 네비게이션 -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-[#0b1020]/80 backdrop-blur-xl" aria-label="사이트 상단">
+    <div class="mx-auto flex min-h-[72px] w-[min(1180px,calc(100%-32px))] items-center gap-4">
+      <a class="inline-flex shrink-0 items-center gap-3 font-black tracking-[-0.03em]" href="index.html" aria-label="홈으로 이동">
+        <span class="grid size-9 place-items-center rounded-xl bg-gradient-to-br from-[#b8ff6a] to-[#e2ffc1] font-mono text-xs font-black text-[#07101f] shadow-[0_10px_28px_rgba(184,255,106,.24)]">MQ</span>
+        <span class="hidden text-sm sm:inline">MY 1-YEAR QUEST</span>
+      </a>
+
+      <button id="menuToggle" type="button" class="ml-auto grid size-11 place-items-center rounded-xl border border-white/10 bg-white/[.04] text-xl lg:hidden" aria-expanded="false" aria-controls="mainNav" aria-label="메뉴 열기">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="mainNav" class="absolute left-4 right-4 top-[calc(100%+8px)] hidden flex-col gap-1 rounded-2xl border border-white/10 bg-[#11182d]/95 p-3 shadow-2xl backdrop-blur-xl lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none" aria-label="주요 메뉴">
+        <a data-nav-page="home" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="index.html">HOME</a>
+        <a data-nav-page="about" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="about.html">ABOUT</a>
+        <a data-nav-page="rhythms" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="rhythms.html">RHYTHMS</a>
+        <a data-nav-page="goals" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="goals.html">GOALS</a>
+      </nav>
+
+      <div class="hidden shrink-0 items-center gap-2 font-mono text-[10px] text-[#9ba7bd] xl:flex" aria-label="사이트 탐색 진행률">
+        <span>TOUR</span>
+        <span class="h-1.5 w-20 overflow-hidden rounded-full bg-white/10"><i class="block h-full w-0 rounded-full bg-[#b8ff6a] transition-[width] duration-500" data-tour-progress-bar></i></span>
+        <strong class="text-[#f7f9fc]" data-tour-progress-text>0/4</strong>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="min-h-[calc(100svh-72px)]">
+    <section class="py-16 lg:py-20">
+      <div class="mx-auto w-[min(1180px,calc(100%-32px))]">
+        <p class="reveal mb-4 inline-flex items-center gap-2.5 font-mono text-xs font-extrabold uppercase tracking-[.16em] text-[#b8ff6a]"><span class="h-px w-7 bg-current"></span>02 · Player &amp; Base</p>
+        <h1 class="reveal max-w-4xl text-[clamp(2.4rem,6vw,4.75rem)] font-black leading-[1.08] tracking-[-.055em]" data-delay="1">ABOUT &amp; <span class="text-[#9cafef]">MY BASE</span></h1>
+        <p class="reveal mt-5 max-w-3xl text-[clamp(.95rem,1.7vw,1.2rem)] text-[#9ba7bd]" data-delay="2">기본 정보와 충남대학교 오른쪽 궁동 로데오 생활권의 위치 관계를 함께 소개합니다.</p>
+        <div class="reveal mt-5 flex flex-wrap gap-2" data-delay="3"><span class="rounded-full border border-white/10 bg-white/[.03] px-3 py-1.5 font-mono text-[10px] font-bold text-[#9ba7bd]">1997</span><span class="rounded-full border border-white/10 bg-white/[.03] px-3 py-1.5 font-mono text-[10px] font-bold text-[#9ba7bd]">INFJ</span><span class="rounded-full border border-white/10 bg-white/[.03] px-3 py-1.5 font-mono text-[10px] font-bold text-[#9ba7bd]">GUNG-DONG</span></div>
+
+        <div class="mt-11 grid gap-6 lg:grid-cols-[.78fr_1.22fr]">
+          <article class="reveal overflow-hidden rounded-[28px] border border-white/10 bg-[#151c33]/80 p-7 shadow-[0_22px_60px_rgba(0,0,0,.22)] backdrop-blur" data-delay="2">
+            <div class="flex items-center gap-4 border-b border-white/10 pb-6"><div class="grid size-16 place-items-center rounded-2xl bg-gradient-to-br from-[#b8ff6a] to-[#e6ffc7] text-sm font-black text-[#07101f]">안세영</div><div><strong class="block text-xl">안세영</strong><span class="text-xs text-[#9ba7bd]">SSAFY · Backend Developer</span></div></div>
+            <dl class="mt-2 divide-y divide-white/[.07]">
+              <div class="grid gap-1 py-4 sm:grid-cols-[120px_1fr]"><dt class="font-mono text-xs tracking-[.08em] text-[#9ba7bd]">NAME</dt><dd class="font-extrabold sm:text-right">안세영</dd></div>
+              <div class="grid gap-1 py-4 sm:grid-cols-[120px_1fr]"><dt class="font-mono text-xs tracking-[.08em] text-[#9ba7bd]">BORN</dt><dd class="font-extrabold sm:text-right">1997</dd></div>
+              <div class="grid gap-1 py-4 sm:grid-cols-[120px_1fr]"><dt class="font-mono text-xs tracking-[.08em] text-[#9ba7bd]">MBTI</dt><dd class="font-extrabold sm:text-right">INFJ (대문자 I)</dd></div>
+              <div class="grid gap-1 py-4 sm:grid-cols-[120px_1fr]"><dt class="font-mono text-xs tracking-[.08em] text-[#9ba7bd]">LOCATION</dt><dd class="font-extrabold sm:text-right">대전 유성구 궁동</dd></div>
+            </dl>
+          </article>
+
+          <article class="reveal grid min-h-[440px] grid-rows-[auto_1fr_auto] gap-3 rounded-[28px] border border-white/10 bg-[#151c33]/80 p-6 shadow-[0_22px_60px_rgba(0,0,0,.22)] backdrop-blur" data-delay="3">
+            <div class="flex items-start justify-between gap-4"><div><strong class="block text-xl">MY CURRENT BASE</strong><p class="mt-1 text-xs text-[#9ba7bd]">충남대학교 오른쪽 · 궁동 로데오거리 인근</p></div><span class="shrink-0 rounded-full border border-[#b8ff6a]/20 bg-[#b8ff6a]/5 px-2.5 py-1.5 font-mono text-[9px] font-black tracking-[.06em] text-[#b8ff6a]">GUNG-DONG</span></div>
+            <svg class="min-h-[280px] w-full rounded-[22px] border border-white/[.08] bg-[#0d1427]" style="background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:28px 28px" viewBox="0 0 640 360" role="img" aria-labelledby="baseMapTitle baseMapDesc">
+              <title id="baseMapTitle">충남대학교와 궁동 로데오거리의 위치 관계를 보여주는 약도</title><desc id="baseMapDesc">궁동 영역 안에서 충남대학교가 왼쪽에 있고, 사용자의 대략적인 생활 위치가 오른쪽 궁동 로데오거리 인근에 표시되어 있습니다.</desc>
+              <rect x="24" y="30" width="592" height="278" rx="28" class="fill-white/[.015] stroke-white/20 stroke-2 [stroke-dasharray:8_8]" />
+              <text x="42" y="52" class="fill-[#9ba7bd] font-mono text-[10px] tracking-[.05em]">GUNG-DONG AREA</text>
+              <path d="M 26 320 C 180 286, 340 340, 618 292" class="fill-none stroke-[#59b3ff]/35 [stroke-linecap:round] [stroke-width:22]"/><text x="514" y="325" class="fill-white/60 text-[9px]">갑천</text>
+              <path d="M 300 70 C 318 128, 318 206, 300 292" class="fill-none stroke-white/15 [stroke-linecap:round] [stroke-width:18]"/><path d="M 300 70 C 318 128, 318 206, 300 292" class="fill-none stroke-white/30 [stroke-dasharray:8_8] [stroke-width:1.5]"/>
+              <g class="group cursor-default outline-none" tabindex="0" aria-label="충남대학교 캠퍼스 영역"><path d="M 58 78 Q 78 55 114 58 L 258 64 Q 282 66 286 91 L 278 238 Q 276 266 246 271 L 92 264 Q 60 260 57 229 Z" class="fill-[#6c8cff]/20 stroke-[#9cafef]/70 stroke-2 transition group-hover:brightness-125 group-focus:brightness-125"/><text x="164" y="153" text-anchor="middle" class="fill-[#f7f9fc] text-base font-black">충남대학교</text><text x="164" y="171" text-anchor="middle" class="fill-[#9ba7bd] font-mono text-[10px] tracking-[.05em]">CNU CAMPUS</text></g>
+              <g class="group cursor-default outline-none" tabindex="0" aria-label="궁동 로데오거리 영역"><path d="M 342 90 Q 360 72 388 73 L 572 80 Q 594 81 596 104 L 588 240 Q 586 260 563 263 L 374 258 Q 348 255 345 232 Z" class="fill-[#b8ff6a]/10 stroke-[#b8ff6a]/60 stroke-2 transition group-hover:brightness-125 group-focus:brightness-125"/><text x="464" y="139" text-anchor="middle" class="fill-[#f7f9fc] text-base font-black">궁동 로데오</text><text x="464" y="157" text-anchor="middle" class="fill-[#9ba7bd] font-mono text-[10px] tracking-[.05em]">RODEO AREA</text></g>
+              <path d="M 375 112 H 558 M 365 152 H 574 M 362 194 H 566 M 392 91 V 242 M 438 82 V 251 M 486 82 V 252 M 535 87 V 246" class="fill-none stroke-white/25 [stroke-dasharray:8_8] [stroke-width:1.5]"/>
+              <circle class="animate-map-pulse fill-[#b8ff6a]/10" cx="531" cy="211" r="28"/><circle class="fill-[#b8ff6a] stroke-[#08111f] stroke-[6]" cx="531" cy="211" r="11"/><path d="M 531 219 L 521 239 L 541 239 Z" class="fill-[#b8ff6a]"/><rect x="478" y="246" width="106" height="29" rx="14.5" class="fill-[#0b1020]/90 stroke-[#b8ff6a]/35"/><text x="531" y="264" text-anchor="middle" class="fill-[#b8ff6a] text-[10px] font-black">MY CURRENT BASE</text>
+            </svg>
+            <div class="flex flex-col gap-1 font-mono text-[10px] text-[#9ba7bd] sm:flex-row sm:items-center sm:justify-between"><span><b class="text-white">CNU CAMPUS</b> → 도로 오른쪽 → <b class="text-white">GUNG-DONG RODEO</b></span><span>SCHEMATIC MAP · APPROXIMATE LOCATION</span></div>
+          </article>
+        </div>
+
+        <nav class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-7 sm:flex-row sm:items-center sm:justify-between" aria-label="페이지 이동">
+          <a class="inline-flex min-h-12 items-center justify-center rounded-xl border border-white/10 bg-white/[.03] px-5 font-bold text-[#9ba7bd] transition hover:-translate-y-0.5 hover:border-white/20 hover:text-white" href="index.html">← HOME</a>
+          <a class="inline-flex min-h-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#b8ff6a] to-[#d8ffac] px-5 font-black text-[#08111f] shadow-[0_18px_38px_rgba(184,255,106,.14)] transition hover:-translate-y-0.5 hover:shadow-[0_22px_48px_rgba(184,255,106,.23)]" href="rhythms.html">NEXT · RHYTHMS →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 bg-[#080d1a]">
+    <div class="mx-auto flex w-[min(1180px,calc(100%-32px))] flex-col gap-2 py-7 text-[10px] text-[#6f7b91] sm:flex-row sm:items-center sm:justify-between">
+      <span>MY 1-YEAR QUEST · 안세영</span>
+      <span>BUILT WITH HTML · TAILWIND CSS · VANILLA JAVASCRIPT · <span data-current-year></span></span>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

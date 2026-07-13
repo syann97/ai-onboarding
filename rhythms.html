@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/effects.css" />
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+  <meta name="description" content="안세영의 운동, OTT 보기, 혼코노 취미를 소개하는 페이지" />
+  <title>RHYTHMS | MY 1-YEAR QUEST</title>
+</head>
+<body class="min-w-[320px] overflow-x-hidden bg-[#0b1020] text-[#f7f9fc] antialiased selection:bg-[#b8ff6a] selection:text-[#08111f]" style="background-image:radial-gradient(circle at 20% 15%,rgba(108,140,255,.17),transparent 34%),radial-gradient(circle at 80% 80%,rgba(184,255,106,.08),transparent 32%)" data-page="rhythms">
+
+  <a href="#main-content" class="fixed -top-24 left-5 z-[100] rounded-xl bg-[#b8ff6a] px-4 py-2.5 font-extrabold text-[#08111f] transition-all focus:top-4">본문으로 이동</a>
+
+  <!-- 모든 페이지에서 그대로 재사용하는 공통 네비게이션 -->
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-[#0b1020]/80 backdrop-blur-xl" aria-label="사이트 상단">
+    <div class="mx-auto flex min-h-[72px] w-[min(1180px,calc(100%-32px))] items-center gap-4">
+      <a class="inline-flex shrink-0 items-center gap-3 font-black tracking-[-0.03em]" href="index.html" aria-label="홈으로 이동">
+        <span class="grid size-9 place-items-center rounded-xl bg-gradient-to-br from-[#b8ff6a] to-[#e2ffc1] font-mono text-xs font-black text-[#07101f] shadow-[0_10px_28px_rgba(184,255,106,.24)]">MQ</span>
+        <span class="hidden text-sm sm:inline">MY 1-YEAR QUEST</span>
+      </a>
+
+      <button id="menuToggle" type="button" class="ml-auto grid size-11 place-items-center rounded-xl border border-white/10 bg-white/[.04] text-xl lg:hidden" aria-expanded="false" aria-controls="mainNav" aria-label="메뉴 열기">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="mainNav" class="absolute left-4 right-4 top-[calc(100%+8px)] hidden flex-col gap-1 rounded-2xl border border-white/10 bg-[#11182d]/95 p-3 shadow-2xl backdrop-blur-xl lg:static lg:ml-auto lg:flex lg:flex-row lg:items-center lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none" aria-label="주요 메뉴">
+        <a data-nav-page="home" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="index.html">HOME</a>
+        <a data-nav-page="about" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="about.html">ABOUT</a>
+        <a data-nav-page="rhythms" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="rhythms.html">RHYTHMS</a>
+        <a data-nav-page="goals" class="rounded-xl border border-transparent px-4 py-2.5 text-xs font-extrabold tracking-[.08em] text-[#9ba7bd] transition hover:bg-white/5 hover:text-white" href="goals.html">GOALS</a>
+      </nav>
+
+      <div class="hidden shrink-0 items-center gap-2 font-mono text-[10px] text-[#9ba7bd] xl:flex" aria-label="사이트 탐색 진행률">
+        <span>TOUR</span>
+        <span class="h-1.5 w-20 overflow-hidden rounded-full bg-white/10"><i class="block h-full w-0 rounded-full bg-[#b8ff6a] transition-[width] duration-500" data-tour-progress-bar></i></span>
+        <strong class="text-[#f7f9fc]" data-tour-progress-text>0/4</strong>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="min-h-[calc(100svh-72px)]">
+    <section class="py-16 lg:py-20">
+      <div class="mx-auto w-[min(1180px,calc(100%-32px))]">
+        <p class="reveal mb-4 inline-flex items-center gap-2.5 font-mono text-xs font-extrabold uppercase tracking-[.16em] text-[#b8ff6a]"><span class="h-px w-7 bg-current"></span>03 · Everyday Rhythms</p>
+        <h1 class="reveal max-w-4xl text-[clamp(2.4rem,6vw,4.75rem)] font-black leading-[1.08] tracking-[-.055em]" data-delay="1">MY THREE <span class="text-[#9cafef]">RHYTHMS</span></h1>
+        <p class="reveal mt-5 max-w-3xl text-[clamp(.95rem,1.7vw,1.2rem)] text-[#9ba7bd]" data-delay="2">움직이고, 감상하고, 노래하며 나만의 생활 리듬을 만듭니다.</p>
+
+        <div class="mt-11 grid gap-6 lg:grid-cols-[1.14fr_.86fr]">
+          <article class="reveal min-h-[510px] rounded-[28px] border border-white/10 bg-[#151c33]/80 p-6 shadow-[0_22px_60px_rgba(0,0,0,.22)] backdrop-blur" data-delay="2">
+            <div class="mb-6 flex items-center justify-between gap-4"><strong class="inline-flex items-center gap-2.5 text-xl"><span class="grid size-10 place-items-center rounded-xl border border-[#b8ff6a]/20 bg-[#b8ff6a]/5 text-xl" aria-hidden="true">🏃</span> MOVE · 운동</strong><span class="font-mono text-[10px] text-[#9ba7bd]">DAILY ROUTINE</span></div>
+            <div class="relative grid min-h-[280px] place-items-center overflow-hidden rounded-3xl bg-gradient-to-b from-[#101830] to-[#0b1122]">
+              <svg class="h-auto w-full max-w-[620px] overflow-visible" viewBox="0 0 500 260" role="img" aria-label="러너가 트랙 경로를 따라 움직이는 애니메이션">
+                <rect class="fill-none stroke-white/10 stroke-2" x="28" y="43" width="444" height="174" rx="87"/><rect class="fill-none stroke-white/10 stroke-2" x="40" y="55" width="420" height="150" rx="75"/><rect class="fill-none stroke-white/10 stroke-2" x="52" y="67" width="396" height="126" rx="63"/>
+                <path id="runningTrackPath" class="fill-none stroke-white/35 stroke-4" d="M 115 80 H 385 A 50 50 0 0 1 435 130 A 50 50 0 0 1 385 180 H 115 A 50 50 0 0 1 65 130 A 50 50 0 0 1 115 80 Z"/>
+                <circle id="runnerHalo" class="fill-[#b8ff6a]/15" cx="115" cy="80" r="17"/><circle id="runnerMarker" class="fill-[#b8ff6a] stroke-[#08111f] stroke-[5] [filter:drop-shadow(0_0_10px_rgba(184,255,106,.58))]" cx="115" cy="80" r="9"/>
+              </svg>
+              <div class="pointer-events-none absolute inset-x-5 bottom-4 flex items-end justify-between gap-3"><div><strong class="block text-lg">매일 러닝</strong><span class="text-xs text-[#9ba7bd]">작게라도 멈추지 않는 습관</span></div><span class="rounded-full bg-[#b8ff6a] px-3 py-2 text-[10px] font-black text-[#07101f]">ACTIVE</span></div>
+            </div>
+            <div class="mt-4 grid grid-cols-2 gap-2.5 sm:grid-cols-4" aria-label="운동 목록"><div class="grid min-h-16 place-items-center rounded-2xl border border-white/10 bg-white/[.03] p-2 text-center text-xs font-extrabold text-[#9ba7bd] transition hover:-translate-y-1 hover:border-[#b8ff6a]/25 hover:text-white">🏃 러닝</div><div class="grid min-h-16 place-items-center rounded-2xl border border-white/10 bg-white/[.03] p-2 text-center text-xs font-extrabold text-[#9ba7bd] transition hover:-translate-y-1 hover:border-[#b8ff6a]/25 hover:text-white">💪 턱걸이</div><div class="grid min-h-16 place-items-center rounded-2xl border border-white/10 bg-white/[.03] p-2 text-center text-xs font-extrabold text-[#9ba7bd] transition hover:-translate-y-1 hover:border-[#b8ff6a]/25 hover:text-white">🤸 딥스</div><div class="grid min-h-16 place-items-center rounded-2xl border border-white/10 bg-white/[.03] p-2 text-center text-xs font-extrabold text-[#9ba7bd] transition hover:-translate-y-1 hover:border-[#b8ff6a]/25 hover:text-white">🔥 팔굽혀펴기</div></div>
+          </article>
+
+          <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-1">
+            <article class="reveal flex min-h-60 flex-col rounded-[28px] border border-white/10 bg-[#151c33]/80 p-6 shadow-[0_18px_50px_rgba(0,0,0,.2)] transition hover:-translate-y-1 hover:border-[#6c8cff]/30" data-delay="3">
+              <div class="flex items-center justify-between gap-4"><div class="inline-flex items-center gap-2.5"><span class="grid size-10 place-items-center rounded-xl border border-[#b8ff6a]/20 bg-[#b8ff6a]/5 text-xl" aria-hidden="true">📺</span><strong class="text-lg">WATCH · OTT 보기</strong></div><div class="ott-logo-box grid h-12 w-16 place-items-center overflow-hidden rounded-2xl border border-white/10 bg-white/[.04]" id="ottLogoBox"><img class="max-h-[70%] w-4/5 object-contain" src="images/ott-logo.png" alt="OTT 서비스 로고" data-fallback-target="ottLogoBox"/><span class="ott-fallback text-xl" aria-hidden="true">▶</span></div></div>
+              <p class="mt-4 text-sm text-[#9ba7bd]">쉬는 시간에는 OTT 콘텐츠를 보며 기분을 전환합니다.</p><div class="mt-auto flex flex-wrap gap-2 pt-5" aria-label="즐겨 본 작품"><span class="rounded-full border border-white/10 bg-white/[.03] px-3 py-2 text-xs font-extrabold">수리남</span><span class="rounded-full border border-white/10 bg-white/[.03] px-3 py-2 text-xs font-extrabold">카지노</span></div>
+            </article>
+            <article class="reveal flex min-h-60 flex-col rounded-[28px] border border-white/10 bg-[#151c33]/80 p-6 shadow-[0_18px_50px_rgba(0,0,0,.2)] transition hover:-translate-y-1 hover:border-[#b8ff6a]/25" data-delay="4">
+              <div class="flex items-center justify-between gap-4"><div class="inline-flex items-center gap-2.5"><span class="grid size-10 place-items-center rounded-xl border border-[#b8ff6a]/20 bg-[#b8ff6a]/5 text-xl" aria-hidden="true">🎤</span><strong class="text-lg">SING · 혼코노</strong></div><span class="font-mono text-[10px] text-[#9ba7bd]">RECHARGE</span></div>
+              <p class="mt-4 text-sm text-[#9ba7bd]">혼자 코인노래방에서 노래를 부르며 기분을 전환하는 시간을 좋아합니다.</p>
+              <div class="mt-auto flex min-h-24 items-end justify-center gap-2 pt-5" aria-hidden="true"><span class="sound-bar h-7 w-2 rounded-full bg-gradient-to-t from-[#6c8cff] to-[#b8ff6a]"></span><span class="sound-bar h-11 w-2 rounded-full bg-gradient-to-t from-[#6c8cff] to-[#b8ff6a]"></span><span class="sound-bar h-16 w-2 rounded-full bg-gradient-to-t from-[#6c8cff] to-[#b8ff6a]"></span><span class="sound-bar h-10 w-2 rounded-full bg-gradient-to-t from-[#6c8cff] to-[#b8ff6a]"></span><span class="sound-bar h-14 w-2 rounded-full bg-gradient-to-t from-[#6c8cff] to-[#b8ff6a]"></span><span class="sound-bar h-8 w-2 rounded-full bg-gradient-to-t from-[#6c8cff] to-[#b8ff6a]"></span><span class="sound-bar h-12 w-2 rounded-full bg-gradient-to-t from-[#6c8cff] to-[#b8ff6a]"></span></div>
+            </article>
+          </div>
+        </div>
+
+        <nav class="mt-12 flex flex-col gap-3 border-t border-white/10 pt-7 sm:flex-row sm:items-center sm:justify-between" aria-label="페이지 이동">
+          <a class="inline-flex min-h-12 items-center justify-center rounded-xl border border-white/10 bg-white/[.03] px-5 font-bold text-[#9ba7bd] transition hover:-translate-y-0.5 hover:border-white/20 hover:text-white" href="about.html">← ABOUT</a>
+          <a class="inline-flex min-h-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#b8ff6a] to-[#d8ffac] px-5 font-black text-[#08111f] shadow-[0_18px_38px_rgba(184,255,106,.14)] transition hover:-translate-y-0.5 hover:shadow-[0_22px_48px_rgba(184,255,106,.23)]" href="goals.html">NEXT · GOALS →</a>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 bg-[#080d1a]">
+    <div class="mx-auto flex w-[min(1180px,calc(100%-32px))] flex-col gap-2 py-7 text-[10px] text-[#6f7b91] sm:flex-row sm:items-center sm:justify-between">
+      <span>MY 1-YEAR QUEST · 안세영</span>
+      <span>BUILT WITH HTML · TAILWIND CSS · VANILLA JAVASCRIPT · <span data-current-year></span></span>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script><script src="js/running-track.js"></script>
+</body>
+</html>
